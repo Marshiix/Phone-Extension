@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="phone">
+        <div id="messages"></div>
+    </div>
+
+    <script>
+        const messagesDiv = document.getElementById("messages");
+
+        window.addEventListener("message", (event) => {
+            if (event.data.sender) {
+                const msg = document.createElement("div");
+                msg.classList.add("message");
+                msg.innerHTML = `
+                    <div class="header">
+                        <img src="${event.data.avatar}" class="avatar">
+                        <span class="sender">${event.data.sender}</span>
+                    </div>
+                    <div class="text">${event.data.text}</div>
+                `;
+                messagesDiv.appendChild(msg);
+            }
+        });
+    </script>
+</body>
+</html>

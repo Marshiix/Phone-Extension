@@ -1,0 +1,42 @@
+body {
+    margin: 0;
+    font-family: sans-serif;
+    background: #f0f0f0;
+}
+
+#phone {
+    width: 320px;
+    height: 600px;
+    border: 2px solid black;
+    border-radius: 20px;
+    background: white;
+    overflow-y: auto;
+    margin: auto;
+    padding: 10px;
+}
+
+.message {
+    border-bottom: 1px solid #ddd;
+    padding: 10px;
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 5px;
+}
+
+.avatar {
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    margin-right: 8px;
+}
+
+.sender {
+    font-weight: bold;
+}
+
+.text {
+    padding-left: 40px;
+}

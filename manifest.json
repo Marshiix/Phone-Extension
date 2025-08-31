@@ -1,0 +1,9 @@
+{
+  "name": "Phone-Extension",
+  "author": "YourName",
+  "version": "1.0",
+  "description": "Displays random phone text messages from characters.",
+  "entry": "index.js",
+  "ui": "ui.html",
+  "type": "extension"
+}
